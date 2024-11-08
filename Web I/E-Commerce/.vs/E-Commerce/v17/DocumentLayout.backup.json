@@ -1,0 +1,258 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C76855D7-0EED-4C74-A0E4-B99E1EE40009}|E-Commerce\\E-Commerce.csproj|d:\\nur\\semestre 2 - 2024\\semestre-ii---2024\\web i\\e-commerce\\e-commerce\\infrastructure\\repository\\carritocompras\\shoppincartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C76855D7-0EED-4C74-A0E4-B99E1EE40009}|E-Commerce\\E-Commerce.csproj|solutionrelative:e-commerce\\infrastructure\\repository\\carritocompras\\shoppincartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C76855D7-0EED-4C74-A0E4-B99E1EE40009}|E-Commerce\\E-Commerce.csproj|d:\\nur\\semestre 2 - 2024\\semestre-ii---2024\\web i\\e-commerce\\e-commerce\\infrastructure\\repository\\productos\\articlerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C76855D7-0EED-4C74-A0E4-B99E1EE40009}|E-Commerce\\E-Commerce.csproj|solutionrelative:e-commerce\\infrastructure\\repository\\productos\\articlerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C76855D7-0EED-4C74-A0E4-B99E1EE40009}|E-Commerce\\E-Commerce.csproj|d:\\nur\\semestre 2 - 2024\\semestre-ii---2024\\web i\\e-commerce\\e-commerce\\controllers\\productos\\articlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C76855D7-0EED-4C74-A0E4-B99E1EE40009}|E-Commerce\\E-Commerce.csproj|solutionrelative:e-commerce\\controllers\\productos\\articlecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C76855D7-0EED-4C74-A0E4-B99E1EE40009}|E-Commerce\\E-Commerce.csproj|d:\\nur\\semestre 2 - 2024\\semestre-ii---2024\\web i\\e-commerce\\e-commerce\\controllers\\carritocompras\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C76855D7-0EED-4C74-A0E4-B99E1EE40009}|E-Commerce\\E-Commerce.csproj|solutionrelative:e-commerce\\controllers\\carritocompras\\shoppingcartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C76855D7-0EED-4C74-A0E4-B99E1EE40009}|E-Commerce\\E-Commerce.csproj|d:\\nur\\semestre 2 - 2024\\semestre-ii---2024\\web i\\e-commerce\\e-commerce\\infrastructure\\repository\\carritocompras\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C76855D7-0EED-4C74-A0E4-B99E1EE40009}|E-Commerce\\E-Commerce.csproj|solutionrelative:e-commerce\\infrastructure\\repository\\carritocompras\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C76855D7-0EED-4C74-A0E4-B99E1EE40009}|E-Commerce\\E-Commerce.csproj|d:\\nur\\semestre 2 - 2024\\semestre-ii---2024\\web i\\e-commerce\\e-commerce\\domain\\carritocompras\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C76855D7-0EED-4C74-A0E4-B99E1EE40009}|E-Commerce\\E-Commerce.csproj|solutionrelative:e-commerce\\domain\\carritocompras\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C76855D7-0EED-4C74-A0E4-B99E1EE40009}|E-Commerce\\E-Commerce.csproj|d:\\nur\\semestre 2 - 2024\\semestre-ii---2024\\web i\\e-commerce\\e-commerce\\controllers\\carritocompras\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C76855D7-0EED-4C74-A0E4-B99E1EE40009}|E-Commerce\\E-Commerce.csproj|solutionrelative:e-commerce\\controllers\\carritocompras\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C76855D7-0EED-4C74-A0E4-B99E1EE40009}|E-Commerce\\E-Commerce.csproj|d:\\nur\\semestre 2 - 2024\\semestre-ii---2024\\web i\\e-commerce\\e-commerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C76855D7-0EED-4C74-A0E4-B99E1EE40009}|E-Commerce\\E-Commerce.csproj|solutionrelative:e-commerce\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C76855D7-0EED-4C74-A0E4-B99E1EE40009}|E-Commerce\\E-Commerce.csproj|d:\\nur\\semestre 2 - 2024\\semestre-ii---2024\\web i\\e-commerce\\e-commerce\\migrations\\20241107212706_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C76855D7-0EED-4C74-A0E4-B99E1EE40009}|E-Commerce\\E-Commerce.csproj|solutionrelative:e-commerce\\migrations\\20241107212706_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C76855D7-0EED-4C74-A0E4-B99E1EE40009}|E-Commerce\\E-Commerce.csproj|d:\\nur\\semestre 2 - 2024\\semestre-ii---2024\\web i\\e-commerce\\e-commerce\\infrastructure\\repository\\usuarios\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C76855D7-0EED-4C74-A0E4-B99E1EE40009}|E-Commerce\\E-Commerce.csproj|solutionrelative:e-commerce\\infrastructure\\repository\\usuarios\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C76855D7-0EED-4C74-A0E4-B99E1EE40009}|E-Commerce\\E-Commerce.csproj|d:\\nur\\semestre 2 - 2024\\semestre-ii---2024\\web i\\e-commerce\\e-commerce\\controllers\\usuarios\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C76855D7-0EED-4C74-A0E4-B99E1EE40009}|E-Commerce\\E-Commerce.csproj|solutionrelative:e-commerce\\controllers\\usuarios\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C76855D7-0EED-4C74-A0E4-B99E1EE40009}|E-Commerce\\E-Commerce.csproj|d:\\nur\\semestre 2 - 2024\\semestre-ii---2024\\web i\\e-commerce\\e-commerce\\infrastructure\\unitofworkpattern\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C76855D7-0EED-4C74-A0E4-B99E1EE40009}|E-Commerce\\E-Commerce.csproj|solutionrelative:e-commerce\\infrastructure\\unitofworkpattern\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C76855D7-0EED-4C74-A0E4-B99E1EE40009}|E-Commerce\\E-Commerce.csproj|d:\\nur\\semestre 2 - 2024\\semestre-ii---2024\\web i\\e-commerce\\e-commerce\\controllers\\productos\\brandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C76855D7-0EED-4C74-A0E4-B99E1EE40009}|E-Commerce\\E-Commerce.csproj|solutionrelative:e-commerce\\controllers\\productos\\brandcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C76855D7-0EED-4C74-A0E4-B99E1EE40009}|E-Commerce\\E-Commerce.csproj|d:\\nur\\semestre 2 - 2024\\semestre-ii---2024\\web i\\e-commerce\\e-commerce\\infrastructure\\repository\\productos\\brandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C76855D7-0EED-4C74-A0E4-B99E1EE40009}|E-Commerce\\E-Commerce.csproj|solutionrelative:e-commerce\\infrastructure\\repository\\productos\\brandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 322,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\Domain\\CarritoCompras\\Order.cs",
+              "RelativeDocumentMoniker": "E-Commerce\\Domain\\CarritoCompras\\Order.cs",
+              "ToolTip": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\Domain\\CarritoCompras\\Order.cs",
+              "RelativeToolTip": "E-Commerce\\Domain\\CarritoCompras\\Order.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwCoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T02:50:05.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20241107212706_InitialCreate.cs",
+              "DocumentMoniker": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\Migrations\\20241107212706_InitialCreate.cs",
+              "RelativeDocumentMoniker": "E-Commerce\\Migrations\\20241107212706_InitialCreate.cs",
+              "ToolTip": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\Migrations\\20241107212706_InitialCreate.cs",
+              "RelativeToolTip": "E-Commerce\\Migrations\\20241107212706_InitialCreate.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAswHkAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T02:30:17.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ArticleRepository.cs",
+              "DocumentMoniker": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\Infrastructure\\Repository\\Productos\\ArticleRepository.cs",
+              "RelativeDocumentMoniker": "E-Commerce\\Infrastructure\\Repository\\Productos\\ArticleRepository.cs",
+              "ToolTip": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\Infrastructure\\Repository\\Productos\\ArticleRepository.cs",
+              "RelativeToolTip": "E-Commerce\\Infrastructure\\Repository\\Productos\\ArticleRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T01:50:12.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\Infrastructure\\Repository\\Usuarios\\UserRepository.cs",
+              "RelativeDocumentMoniker": "E-Commerce\\Infrastructure\\Repository\\Usuarios\\UserRepository.cs",
+              "ToolTip": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\Infrastructure\\Repository\\Usuarios\\UserRepository.cs",
+              "RelativeToolTip": "E-Commerce\\Infrastructure\\Repository\\Usuarios\\UserRepository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T02:00:38.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\Controllers\\Usuarios\\UserController.cs",
+              "RelativeDocumentMoniker": "E-Commerce\\Controllers\\Usuarios\\UserController.cs",
+              "ToolTip": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\Controllers\\Usuarios\\UserController.cs",
+              "RelativeToolTip": "E-Commerce\\Controllers\\Usuarios\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T01:38:37.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\Controllers\\CarritoCompras\\OrderController.cs",
+              "RelativeDocumentMoniker": "E-Commerce\\Controllers\\CarritoCompras\\OrderController.cs",
+              "ToolTip": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\Controllers\\CarritoCompras\\OrderController.cs",
+              "RelativeToolTip": "E-Commerce\\Controllers\\CarritoCompras\\OrderController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAAC4AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T01:35:29.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ShoppingCartController.cs",
+              "DocumentMoniker": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\Controllers\\CarritoCompras\\ShoppingCartController.cs",
+              "RelativeDocumentMoniker": "E-Commerce\\Controllers\\CarritoCompras\\ShoppingCartController.cs",
+              "ToolTip": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\Controllers\\CarritoCompras\\ShoppingCartController.cs",
+              "RelativeToolTip": "E-Commerce\\Controllers\\CarritoCompras\\ShoppingCartController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T01:31:38.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BrandController.cs",
+              "DocumentMoniker": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\Controllers\\Productos\\BrandController.cs",
+              "RelativeDocumentMoniker": "E-Commerce\\Controllers\\Productos\\BrandController.cs",
+              "ToolTip": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\Controllers\\Productos\\BrandController.cs",
+              "RelativeToolTip": "E-Commerce\\Controllers\\Productos\\BrandController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T00:45:28.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ArticleController.cs",
+              "DocumentMoniker": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\Controllers\\Productos\\ArticleController.cs",
+              "RelativeDocumentMoniker": "E-Commerce\\Controllers\\Productos\\ArticleController.cs",
+              "ToolTip": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\Controllers\\Productos\\ArticleController.cs",
+              "RelativeToolTip": "E-Commerce\\Controllers\\Productos\\ArticleController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T00:38:39.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\Infrastructure\\UnitOfWorkPattern\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "E-Commerce\\Infrastructure\\UnitOfWorkPattern\\UnitOfWork.cs",
+              "ToolTip": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\Infrastructure\\UnitOfWorkPattern\\UnitOfWork.cs",
+              "RelativeToolTip": "E-Commerce\\Infrastructure\\UnitOfWorkPattern\\UnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T00:38:39.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BrandRepository.cs",
+              "DocumentMoniker": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\Infrastructure\\Repository\\Productos\\BrandRepository.cs",
+              "RelativeDocumentMoniker": "E-Commerce\\Infrastructure\\Repository\\Productos\\BrandRepository.cs",
+              "ToolTip": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\Infrastructure\\Repository\\Productos\\BrandRepository.cs",
+              "RelativeToolTip": "E-Commerce\\Infrastructure\\Repository\\Productos\\BrandRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T00:36:11.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ShoppinCartRepository.cs",
+              "DocumentMoniker": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\Infrastructure\\Repository\\CarritoCompras\\ShoppinCartRepository.cs",
+              "RelativeDocumentMoniker": "E-Commerce\\Infrastructure\\Repository\\CarritoCompras\\ShoppinCartRepository.cs",
+              "ToolTip": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\Infrastructure\\Repository\\CarritoCompras\\ShoppinCartRepository.cs*",
+              "RelativeToolTip": "E-Commerce\\Infrastructure\\Repository\\CarritoCompras\\ShoppinCartRepository.cs*",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwCwAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T00:31:44.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\Program.cs",
+              "RelativeDocumentMoniker": "E-Commerce\\Program.cs",
+              "ToolTip": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\Program.cs",
+              "RelativeToolTip": "E-Commerce\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T00:24:48.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderRepository.cs",
+              "DocumentMoniker": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\Infrastructure\\Repository\\CarritoCompras\\OrderRepository.cs",
+              "RelativeDocumentMoniker": "E-Commerce\\Infrastructure\\Repository\\CarritoCompras\\OrderRepository.cs",
+              "ToolTip": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\Infrastructure\\Repository\\CarritoCompras\\OrderRepository.cs",
+              "RelativeToolTip": "E-Commerce\\Infrastructure\\Repository\\CarritoCompras\\OrderRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T00:24:26.651Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

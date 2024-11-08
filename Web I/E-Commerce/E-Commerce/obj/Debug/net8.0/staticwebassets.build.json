@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "SZaF2xnmRb4jH2gpl7MfYUR8Cdl5lRW9aWabLetT1YU=",
+  "Source": "E-Commerce",
+  "BasePath": "_content/E-Commerce",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "E-Commerce\\wwwroot",
+      "Source": "E-Commerce",
+      "ContentRoot": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\wwwroot\\",
+      "BasePath": "_content/E-Commerce",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}
