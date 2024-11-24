@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace E_Commerce.Controllers.Productos
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class ArticleController : Controller
     {
         private readonly IArticleRepository _articleRepository;
@@ -16,19 +18,18 @@ namespace E_Commerce.Controllers.Productos
             _unitOfWork = unitOfWork;
         }
 
-        public IActionResult Index()
+        //api/article/GetArticles
+        [Route("GetArticles")]
+        [HttpGet]
+        public async Task<IActionResult> GetArticles()
         {
-            return View();
+            List<Article> articles = await _articleRepository.FindAllAsync();
+            return Ok(articles);
         }
 
         [HttpGet]
-        public async Task<List<Article>> GetArticles()
-        {
-            return await _articleRepository.FindAllAsync();
-        }
-
-        [HttpGet]
-        public async Task<Article> GetArticleById(Guid Id)
+        [Route("GetArticleById/{Id}")]
+        public async Task<Article> GetArticleById([FromRoute] Guid Id)
         {
             return await _articleRepository.FindByIdAsync(Id);
         }
@@ -50,7 +51,8 @@ namespace E_Commerce.Controllers.Productos
         }
 
         [HttpDelete]
-        public async Task RemoveArticle(Guid Id)
+        [Route("RemoveArticle/{articleId}")]
+        public async Task RemoveArticle([FromRoute] Guid Id)
         {
             await _articleRepository.RemoveAsync(Id);
             await _unitOfWork.Commit();

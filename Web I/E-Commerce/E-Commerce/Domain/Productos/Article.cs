@@ -1,4 +1,7 @@
-﻿namespace E_Commerce.Domain.Productos
+﻿using E_Commerce.Domain.Imagen;
+using System.Text.Json.Serialization;
+
+namespace E_Commerce.Domain.Productos
 {
     public class Article
     {
@@ -9,36 +12,17 @@
         public string Description { get; set; }
         public double Price { get; set; }
 
-        public Article(Guid id, List<Category> categories, Brand brand, string name, string description, double price)
+        [JsonIgnore]
+        public Image Imagen { get; set; }
+        public int? ImagenId { get; set; }
+        public Article()
         {
-            Id = id;
-            Categories = categories;
-            Brand = brand;
-            Name = name;
-            Description = description;
-            Price = price;
-        }
-
-        public Article(List<Category> categories, Brand brand, string name, string description, double price)
-        : this(Guid.Empty, categories, brand, name, description, price)
-        { }
-
-        public Article() : this(Guid.Empty, new List<Category>(), new Brand(), "", "", 0) { }
-
-
-        public void addCategory(Category category)
-        {
-            Categories.Add(category);
-        }
-
-        public void removeCategory(Category category)
-        {
-            Categories.Remove(category);
-        }
-
-        public void updateCategory(Category category)
-        {
-            Categories[Categories.IndexOf(category)] = category;
+            Id = Guid.NewGuid();
+            Categories = new List<Category>();
+            Brand = new Brand();
+            Name = String.Empty; ;
+            Description = String.Empty;
+            Price = 0;
         }
     }
 }

@@ -1,0 +1,85 @@
+﻿
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+h1 {
+    text-align: left;
+    color: #333;
+    font-size: 24px;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.product {
+    min-width: 150px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 0 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+    .product img {
+        max-width: 100px;
+        margin-bottom: 15px;
+    }
+
+    .product h2 {
+        color: #f9a825;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .product p {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    .product .price {
+        color: red;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .product .stock {
+        color: gray;
+        font-size: 14px;
+    }
+
+/* Buttons for previous/next */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 100;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }

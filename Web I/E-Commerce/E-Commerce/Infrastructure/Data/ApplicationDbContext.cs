@@ -1,4 +1,5 @@
 ﻿using E_Commerce.Domain.CarritoCompras;
+using E_Commerce.Domain.Imagen;
 using E_Commerce.Domain.Productos;
 using E_Commerce.Domain.Usuarios;
 using Microsoft.EntityFrameworkCore;
@@ -18,5 +19,6 @@ namespace E_Commerce.Infrastructure.Data
         public DbSet<User> Users { get; set; }
         public DbSet<ShoppingCart> ShoppingCarts { get; set; }
         public DbSet<Order> Ordes { get; set; }
+        public DbSet<Image> Images { get; set; }
     }
 }

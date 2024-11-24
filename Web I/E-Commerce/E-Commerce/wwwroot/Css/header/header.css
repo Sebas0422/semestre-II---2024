@@ -1,0 +1,155 @@
+.search {
+    text-align: center;
+    width: 100%;
+}
+
+img[alt="logo"] {
+    width: 200px;
+}
+
+.buscador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+    .buscador input {
+        width: 92%;
+    }
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 10px;
+}
+
+    .options a {
+        text-decoration: none;
+        color: black;
+    }
+
+.menu__category {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    background-color: rgb(85, 122, 160);
+    height: 30px;
+    color: white;
+}
+
+#menu-switch {
+    display: none;
+}
+
+    #menu-switch:checked + .menu__list {
+        display: block;
+    }
+
+.menu__list {
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    padding: 0;
+    display: none;
+}
+
+.menu__list__item {
+    list-style: none;
+    border-bottom: 1px solid;
+    margin-bottom: 5px;
+    text-decoration: none;
+    margin: 0;
+    background-color: rgb(127, 183, 240);
+    height: 30px;
+    padding: 5px;
+}
+
+    .menu__list__item a {
+        text-decoration: none;
+        width: 100%;
+        color: rgb(136, 123, 7);
+    }
+
+@media screen and (min-width: 768px) {
+    .menu-mobile {
+        display: none;
+    }
+
+    .search {
+        display: flex;
+        text-align: left;
+    }
+
+    #menu-switch:checked + .menu__list {
+        display: flex;
+    }
+
+    .buscador input {
+        width: 90%;
+    }
+
+    .options {
+        width: 500px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: right;
+    }
+
+        .options a {
+            margin-left: 10px;
+        }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu__category {
+        width: 200px;
+    }
+
+    .menu__list {
+        display: flex;
+        text-align: left;
+        align-items: center;
+        border: 1px solid;
+    }
+
+    .menu__list__item {
+        background-color: white;
+        border: none;
+        padding: 0 12px;
+        border-right: 1px solid;
+    }
+
+        .menu__list__item a {
+            color: black;
+        }
+}
+
+@media screen and (min-width: 992px) {
+
+    .menu__category {
+        width: 500px;
+        padding: 5 40px;
+    }
+
+    .menu__list {
+        border: 0px;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .menu__list__item {
+        border: 0px;
+    }
+
+    img[alt="logo"] {
+        width: 250px;
+    }
+}
