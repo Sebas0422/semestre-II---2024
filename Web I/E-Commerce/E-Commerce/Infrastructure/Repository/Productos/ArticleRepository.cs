@@ -29,7 +29,10 @@ namespace E_Commerce.Infrastructure.Repository.Productos
 
         public async Task<List<Article>> FindAllAsync()
         {
-            IQueryable<Article> executeQuery= _context.Articles.AsNoTracking().Include(x=> x.Brand);
+            IQueryable<Article> executeQuery= _context.Articles
+                .AsNoTracking()
+                .Include(x=> x.Brand)
+                .Include(x=> x.Imagen);
             List<Article> list = await executeQuery.ToListAsync();
             return list;
         }

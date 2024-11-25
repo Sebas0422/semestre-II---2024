@@ -83,3 +83,11 @@ h1 {
     .prev:hover, .next:hover {
         background-color: rgba(0,0,0,0.8);
     }
+
+.btnAddCart{
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    background-color: red;
+    padding:6px;
+}

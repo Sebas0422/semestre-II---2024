@@ -54,7 +54,7 @@
   {
     "ContainingType": "E_Commerce.Controllers.Productos.ArticleController",
     "Method": "GetArticleById",
-    "RelativePath": "api/Article/GetArticleById/{Id}",
+    "RelativePath": "api/Article/{Id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

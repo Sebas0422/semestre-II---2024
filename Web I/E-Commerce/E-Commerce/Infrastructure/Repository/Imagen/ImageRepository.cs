@@ -1,17 +1,30 @@
 ﻿using E_Commerce.Domain.Imagen;
 using E_Commerce.Domain.Repository.Imagen;
+using E_Commerce.Domain.UnitOfWorkPattern;
+using E_Commerce.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace E_Commerce.Infrastructure.Repository.Imagen
 {
     public class ImageRepository : IImageRepository
     {
-        private readonly 
-        public Task<Image> CreateAsync(Image obj)
+        private readonly ApplicationDbContext _context;
+        private readonly IUnitOfWork _unitOfWork;
+
+        public ImageRepository(ApplicationDbContext context, IUnitOfWork unitOfWork)
         {
-            throw new NotImplementedException();
+            _context = context;
+            _unitOfWork = unitOfWork;
         }
 
-        public Task<bool> ExistsAsync(Guid id)
+        public async Task<Image> CreateAsync(Image obj)
+        {
+            await _context.Images.AddAsync(obj);
+            await _unitOfWork.Commit();
+            return obj;
+        }
+
+        public Task<bool> ExistsAsync(int id)
         {
             throw new NotImplementedException();
         }
@@ -21,17 +34,20 @@ namespace E_Commerce.Infrastructure.Repository.Imagen
             throw new NotImplementedException();
         }
 
-        public Task<Image> FindByIdAsync(Guid id)
+        public async Task<Image> FindByIdAsync(int id)
         {
-            throw new NotImplementedException();
+            return await FindByIdAsync(id, false);
         }
 
-        public Task<Image> FindByIdAsync(Guid id, bool tracking)
+        public async Task<Image> FindByIdAsync(int id, bool tracking)
         {
-            throw new NotImplementedException();
+            Image? image = await _context.Images
+                .AsTracking(tracking ? QueryTrackingBehavior.TrackAll : QueryTrackingBehavior.NoTracking)
+                .FirstOrDefaultAsync(x => x.ImagenId.Equals(id));
+            return image;
         }
 
-        public Task RemoveAsync(Guid id)
+        public Task RemoveAsync(int id)
         {
             throw new NotImplementedException();
         }

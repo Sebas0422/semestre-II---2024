@@ -28,7 +28,7 @@ namespace E_Commerce.Controllers.Productos
         }
 
         [HttpGet]
-        [Route("GetArticleById/{Id}")]
+        [Route("{Id}")]
         public async Task<Article> GetArticleById([FromRoute] Guid Id)
         {
             return await _articleRepository.FindByIdAsync(Id);

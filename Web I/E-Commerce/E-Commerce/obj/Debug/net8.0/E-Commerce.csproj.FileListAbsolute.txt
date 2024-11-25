@@ -137,5 +137,3 @@ D:\NUR\Semestre 2 - 2024\semestre-II---2024\Web I\E-Commerce\E-Commerce\bin\Debu
 D:\NUR\Semestre 2 - 2024\semestre-II---2024\Web I\E-Commerce\E-Commerce\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\NUR\Semestre 2 - 2024\semestre-II---2024\Web I\E-Commerce\E-Commerce\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\NUR\Semestre 2 - 2024\semestre-II---2024\Web I\E-Commerce\E-Commerce\obj\Debug\net8.0\E-Commerce.csproj.Up2Date
-D:\NUR\Semestre 2 - 2024\semestre-II---2024\Web I\E-Commerce\E-Commerce\obj\Debug\net8.0\E-Commerce.RazorAssemblyInfo.cache
-D:\NUR\Semestre 2 - 2024\semestre-II---2024\Web I\E-Commerce\E-Commerce\obj\Debug\net8.0\E-Commerce.RazorAssemblyInfo.cs

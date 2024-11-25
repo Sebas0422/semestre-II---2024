@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NUOioRQ05z3cszq3Fe0Un9ZKPV+hMoTiC6SZ5Xq1G9I=",
+  "Hash": "ZLTabLoe02Aw7dq2HbZwAsY6JoZkJ4oEYbT+qLNX+1M=",
   "Source": "E-Commerce",
   "BasePath": "_content/E-Commerce",
   "Mode": "Default",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\wwwroot\\Assets\\img\\icon-article.png",
+      "SourceId": "E-Commerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\wwwroot\\",
+      "BasePath": "_content/E-Commerce",
+      "RelativePath": "Assets/img/icon-article.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Assets\\img\\icon-article.png"
+    },
     {
       "Identity": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\wwwroot\\Assets\\img\\logo.png",
       "SourceId": "E-Commerce",
@@ -737,6 +756,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Css\\paginaPrincipal\\paginaPrincipal.css"
+    },
+    {
+      "Identity": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\wwwroot\\Css\\producto\\producto.css",
+      "SourceId": "E-Commerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\wwwroot\\",
+      "BasePath": "_content/E-Commerce",
+      "RelativePath": "Css/producto/producto.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Css\\producto\\producto.css"
     },
     {
       "Identity": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\wwwroot\\Css\\styles.css",
@@ -41418,12 +41456,12 @@
       "OriginalItemSpec": "wwwroot\\js\\header\\loadHeader.js"
     },
     {
-      "Identity": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\wwwroot\\js\\paginPrincipal\\paginaPrincipal.js",
+      "Identity": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\wwwroot\\js\\Inventario\\producto.js",
       "SourceId": "E-Commerce",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\wwwroot\\",
       "BasePath": "_content/E-Commerce",
-      "RelativePath": "js/paginPrincipal/paginaPrincipal.js",
+      "RelativePath": "js/Inventario/producto.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -41434,7 +41472,26 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\paginPrincipal\\paginaPrincipal.js"
+      "OriginalItemSpec": "wwwroot\\js\\Inventario\\producto.js"
+    },
+    {
+      "Identity": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\wwwroot\\js\\paginaPrincipal\\paginaPrincipal.js",
+      "SourceId": "E-Commerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\wwwroot\\",
+      "BasePath": "_content/E-Commerce",
+      "RelativePath": "js/paginaPrincipal/paginaPrincipal.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\paginaPrincipal\\paginaPrincipal.js"
     },
     {
       "Identity": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\wwwroot\\paginaPrincipal.html",
@@ -41530,6 +41587,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Views\\Inventario\\catalogo.html"
+    },
+    {
+      "Identity": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\wwwroot\\Views\\Inventario\\producto.html",
+      "SourceId": "E-Commerce",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\NUR\\Semestre 2 - 2024\\semestre-II---2024\\Web I\\E-Commerce\\E-Commerce\\wwwroot\\",
+      "BasePath": "_content/E-Commerce",
+      "RelativePath": "Views/Inventario/producto.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Views\\Inventario\\producto.html"
     }
   ]
 }

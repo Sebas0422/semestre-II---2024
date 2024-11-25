@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Css/paginaPrincipal/paginaPrincipal.css" />
-    <title>Pagina Principal</title> 
+    <title>Pagina Principal</title>
 </head>
 <body>
     <header id="header"></header>
-    <main class="main-container"> 
+    <main class="main-container">
         <section id="advertisingSpace">
         </section>
         <section id="allArticles" class="container main">
@@ -19,6 +19,28 @@
         </section>
     </main>
     <script src="js/header/loadHeader.js"></script>
-    <script src="js/paginPrincipal/paginaPrincipal.js"></script>
+    <script src="js/paginaPrincipal/paginaPrincipal.js"></script>
+    <script>
+        let currentIndex = 0;
+
+        function moveCarousel(direction) {
+            const carousel = document.querySelector('.carousel');
+            const products = document.querySelectorAll('.product');
+            const totalProducts = products.length;
+
+            currentIndex += direction;
+
+            if (currentIndex < 0) {
+                currentIndex = totalProducts - 1;
+            } else if (currentIndex >= totalProducts) {
+                currentIndex = 0;
+            }
+
+            const productWidth = products[0].offsetWidth + 20;
+
+            carousel.style.transform = `translateX(-${currentIndex * productWidth}px)`;
+        }
+
+    </script>
 </body>
 </html>

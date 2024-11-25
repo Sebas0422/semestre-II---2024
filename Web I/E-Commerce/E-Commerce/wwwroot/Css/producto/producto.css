@@ -1,0 +1,90 @@
+﻿.container-main {
+    padding: 10px;
+}
+
+.product-title {
+    background-color: #3A3A3A;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+    .product-title h2 {
+        font-size: 24px;
+    }
+
+.product-image {
+    text-align: center;
+}
+
+    .product-image img {
+        width: 80%;
+        height: auto;
+    }
+
+.price {
+    font-size: 28px;
+    color: #e60000;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.product-info {
+    margin-top: 20px;
+}
+
+.info-section {
+    margin-bottom: 20px;
+}
+
+    .info-section h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .info-section ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+        .info-section ul li {
+            padding: 5px 0;
+        }
+
+.stock-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+    .stock-info table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+    }
+
+        .stock-info table th,
+        .stock-info table td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .stock-info table th {
+            background-color: #f4f4f4;
+        }
+
+@media screen and (min-width: 768px) {
+    .container-main {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and(min-width:992px) {
+    .product-image img {
+        min-width: 800px;
+    }
+}

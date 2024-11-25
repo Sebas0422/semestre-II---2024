@@ -41,12 +41,18 @@ function mostrarAllArticles(listOfArticles, title) {
     allArticlesHtml.innerHTML = html;
 }
 function getArticleHtml(obj) {
-
-    return `<div class="product">
-                <img src="https://assets.digicorp.com.bo/product_images/webp/79005-image-1-1729546800325.webp">
-                
+    console.log(obj);
+    const imageUrl = !obj.imagenId || obj.imagenId === 0 ? 'Assets/img/icon-article.png' : `api/image/${obj.imagenId}`;
+    return `<div class="product" onClick="viewArticleDetail('${obj.id}')">
+                <img src="${imageUrl}">
                 <p>${obj.name}</p>
                 <p class="price">${obj.price}<span>Bs</span></p>
                 <p class="stock">stock: 10</p>
+                <a href="/Views/Inventario/producto.html?id=${obj.id}" class="btnAddCart">Agregar al carrito</a>
             </div>`
+}
+
+function viewArticleDetail(id) {
+    const url = `/Views/Inventario/producto.html?id=${id}`;
+    window.location.href = url;
 }
