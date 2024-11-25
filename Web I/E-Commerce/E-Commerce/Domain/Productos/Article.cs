@@ -6,7 +6,7 @@ namespace E_Commerce.Domain.Productos
     public class Article
     {
         public Guid Id { get; set; }
-        public List<Category> Categories { get; set; }
+        public Category Categories { get; set; }
         public Brand Brand { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
@@ -18,7 +18,7 @@ namespace E_Commerce.Domain.Productos
         public Article()
         {
             Id = Guid.NewGuid();
-            Categories = new List<Category>();
+            Categories = new Category();
             Brand = new Brand();
             Name = String.Empty; ;
             Description = String.Empty;

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace E_Commerce.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241124165244_ActualizandoImagen")]
-    partial class ActualizandoImagen
+    [Migration("20241125110814_InitialMigration")]
+    partial class InitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -31,16 +31,21 @@ namespace E_Commerce.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<Guid>("ArticleId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<Guid>("ArticlesId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
-                    b.Property<Guid>("ShoppingCartId")
+                    b.Property<Guid?>("ShoppingCartId")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ArticleId");
 
                     b.HasIndex("ShoppingCartId");
 
@@ -104,6 +109,9 @@ namespace E_Commerce.Migrations
                     b.Property<Guid>("BrandId")
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<Guid>("CategoriesId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -121,6 +129,8 @@ namespace E_Commerce.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("BrandId");
+
+                    b.HasIndex("CategoriesId");
 
                     b.HasIndex("ImagenId");
 
@@ -148,16 +158,11 @@ namespace E_Commerce.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("ArticleId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("ArticleId");
 
                     b.ToTable("Categories");
                 });
@@ -207,11 +212,17 @@ namespace E_Commerce.Migrations
 
             modelBuilder.Entity("E_Commerce.Domain.CarritoCompras.Order", b =>
                 {
-                    b.HasOne("E_Commerce.Domain.CarritoCompras.ShoppingCart", null)
-                        .WithMany("Orders")
-                        .HasForeignKey("ShoppingCartId")
+                    b.HasOne("E_Commerce.Domain.Productos.Article", "Article")
+                        .WithMany()
+                        .HasForeignKey("ArticleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.HasOne("E_Commerce.Domain.CarritoCompras.ShoppingCart", null)
+                        .WithMany("Orders")
+                        .HasForeignKey("ShoppingCartId");
+
+                    b.Navigation("Article");
                 });
 
             modelBuilder.Entity("E_Commerce.Domain.CarritoCompras.ShoppingCart", b =>
@@ -233,20 +244,21 @@ namespace E_Commerce.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("E_Commerce.Domain.Productos.Category", "Categories")
+                        .WithMany()
+                        .HasForeignKey("CategoriesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("E_Commerce.Domain.Imagen.Image", "Imagen")
                         .WithMany()
                         .HasForeignKey("ImagenId");
 
                     b.Navigation("Brand");
 
-                    b.Navigation("Imagen");
-                });
+                    b.Navigation("Categories");
 
-            modelBuilder.Entity("E_Commerce.Domain.Productos.Category", b =>
-                {
-                    b.HasOne("E_Commerce.Domain.Productos.Article", null)
-                        .WithMany("Categories")
-                        .HasForeignKey("ArticleId");
+                    b.Navigation("Imagen");
                 });
 
             modelBuilder.Entity("E_Commerce.Domain.Usuarios.User", b =>
@@ -263,11 +275,6 @@ namespace E_Commerce.Migrations
             modelBuilder.Entity("E_Commerce.Domain.CarritoCompras.ShoppingCart", b =>
                 {
                     b.Navigation("Orders");
-                });
-
-            modelBuilder.Entity("E_Commerce.Domain.Productos.Article", b =>
-                {
-                    b.Navigation("Categories");
                 });
 #pragma warning restore 612, 618
         }

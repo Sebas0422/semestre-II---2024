@@ -41,6 +41,59 @@ img[alt="logo"] {
     color: white;
 }
 
+#menuCategorie {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0 10px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 5px;
+    background-color: rgb(85, 122, 160);
+    height: 30px;
+    color: white;
+    width: 100%;
+}
+
+#itemMenuCategorie {
+    position: relative;
+    display: block;
+}
+
+    #itemMenuCategorie a {
+        text-decoration: none;
+        display: block;
+        padding: 10px 20px;
+        background-color: rgb(85, 122, 160);
+        color: white;
+        font-weight: bold;
+    }
+
+#subMenuCategorie {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+}
+
+    #subMenuCategorie li a {
+        width: 100%;
+        color: white;
+        text-decoration: none;
+    }
+
+        #subMenuCategorie li a:hover {
+            background-color: #575757;
+        }
+
+#itemMenuCategorie a:hover {
+    background-color: #008c2e;
+}
+
 #menu-switch {
     display: none;
 }
@@ -109,7 +162,7 @@ img[alt="logo"] {
         justify-content: space-between;
     }
 
-    .menu__category {
+    #menuCategorie {
         width: 200px;
     }
 
@@ -117,19 +170,27 @@ img[alt="logo"] {
         display: flex;
         text-align: left;
         align-items: center;
-        border: 1px solid;
     }
 
     .menu__list__item {
         background-color: white;
-        border: none;
         padding: 0 12px;
         border-right: 1px solid;
+        border-top: 1px solid;
+        height: 100%;
     }
 
-        .menu__list__item a {
-            color: black;
-        }
+    .borderNone {
+        border: none;
+    }
+
+    .borderLeft{
+        border-left: 1px solid;
+    }
+
+    .menu__list__item a {
+        color: black;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -151,5 +212,13 @@ img[alt="logo"] {
 
     img[alt="logo"] {
         width: 250px;
+    }
+
+    #menuCategorie {
+        width: 300px;
+    }
+
+    #subMenuCategorie {
+        width: 300px;
     }
 }

@@ -16,16 +16,16 @@ async function loadDetail(articleId) {
 }
 
 function getArticleInfo(article) {
-    const imageUrl = !article.imagenId || article.imagenId === 0 ? '../../Assets/img/icon-article.png' : `api/image/${article.imagenId}`;
+    const imageUrl = !article.imagenId || article.imagenId === 0 ? '/Assets/img/icon-article.png' : `/api/image/${article.imagenId}`;
     return `
     <div>
         <section class="product-image">
             <img src="${imageUrl}">
         </section>
-        <p class="price">${article.price} Bs</p>
     </div>
     <div class="product-info">
         <div class="info-section">
+            <p class="price">${article.price} Bs</p>
             <h2>Detalles del Producto</h2>
             <ul>
                 <li><strong>Marca:</strong> ${article.brand.name}</li>
@@ -47,22 +47,14 @@ function getArticleInfo(article) {
                             <tr>
                                 <th>Ubicación</th>
                                 <th>Stock Actual</th>
-                                <th>Stock en Reserva</th>
                                 <th>Pedidos</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>SC | Oficina Central</td>
-                                <td>+50</td>
-                                <td>0</td>
-                                <td>0</td>
-                            </tr>
-                            <tr>
-                                <td>SC | Oficina Norte</td>
-                                <td>+50</td>
-                                <td>0</td>
-                                <td>0</td>
+                                <td>50+</td>
+                                <td><input style="width:40px" type="number" min="0" value="0"></td>
                             </tr>
                         </tbody>
                     </table>

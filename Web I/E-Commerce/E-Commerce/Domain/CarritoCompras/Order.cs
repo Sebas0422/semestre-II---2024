@@ -5,19 +5,18 @@ namespace E_Commerce.Domain.CarritoCompras
     public class Order
     {
         public Guid Id { get; set; }
-        public Guid ShoppingCartId { get; set; }
         public Guid ArticlesId { get; set; }
+        public Article Article { get; set; }
         public int Quantity { get; set; }
 
-        public Order(Guid shoppingCart, Guid articles, int quantity)
+        public Order(Guid articles, int quantity)
         {
-            ShoppingCartId = shoppingCart;
             ArticlesId = articles;
             Quantity = quantity;
         }
 
         public Order(Guid shoppingCart)
-        : this(shoppingCart, Guid.Empty, 0)
+        : this(Guid.Empty, 0)
         { }
 
         public Order()

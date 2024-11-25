@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace E_Commerce.Controllers.Productos
 {
+    [Route("api/[controller]")]
     public class CategoryController : Controller
     {
         private readonly ICategoryRepository _categoryRepository;
@@ -15,17 +16,16 @@ namespace E_Commerce.Controllers.Productos
             _unitOfWork = unitOfWork;
         }
 
-        public IActionResult Index()
-        {
-            return View();
-        }
+        [Route("GetCategories")]
         [HttpGet]
-        public async Task<List<Category>> GetCategories()
+        public async Task<IActionResult> GetCategories()
         {
-            return await _categoryRepository.FindAllAsync();
+            return Ok(await _categoryRepository.FindAllAsync());
         }
+
+        [Route("{Id}")]
         [HttpGet]
-        public async Task<Category> GetCategoryById(Guid Id)
+        public async Task<Category> GetCategoryById([FromRoute] Guid Id)
         {
             return await _categoryRepository.FindByIdAsync(Id);
         }

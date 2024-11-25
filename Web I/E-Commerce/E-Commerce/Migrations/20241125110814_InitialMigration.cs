@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace E_Commerce.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class InitialMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -21,6 +21,34 @@ namespace E_Commerce.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Brands", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Categories",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Categories", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Images",
+                columns: table => new
+                {
+                    ImagenId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    FileName = table.Column<string>(type: "varchar(200)", maxLength: 200, nullable: false),
+                    Path = table.Column<string>(type: "varchar(1000)", maxLength: 1000, nullable: false),
+                    Temporal = table.Column<bool>(type: "bit", nullable: false),
+                    FechaSubida = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Images", x => x.ImagenId);
                 });
 
             migrationBuilder.CreateTable(
@@ -40,10 +68,12 @@ namespace E_Commerce.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    CategoriesId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     BrandId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Price = table.Column<double>(type: "float", nullable: false)
+                    Price = table.Column<double>(type: "float", nullable: false),
+                    ImagenId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -54,6 +84,17 @@ namespace E_Commerce.Migrations
                         principalTable: "Brands",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Articles_Categories_CategoriesId",
+                        column: x => x.CategoriesId,
+                        principalTable: "Categories",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Articles_Images_ImagenId",
+                        column: x => x.ImagenId,
+                        principalTable: "Images",
+                        principalColumn: "ImagenId");
                 });
 
             migrationBuilder.CreateTable(
@@ -75,24 +116,6 @@ namespace E_Commerce.Migrations
                         principalTable: "Roles",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Categories",
-                columns: table => new
-                {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ArticleId = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Categories", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Categories_Articles_ArticleId",
-                        column: x => x.ArticleId,
-                        principalTable: "Articles",
-                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -119,16 +142,17 @@ namespace E_Commerce.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    ShoppingCartId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     ArticlesId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Quantity = table.Column<int>(type: "int", nullable: false)
+                    ArticleId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Quantity = table.Column<int>(type: "int", nullable: false),
+                    ShoppingCartId = table.Column<Guid>(type: "uniqueidentifier", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Ordes", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Ordes_Articles_ArticlesId",
-                        column: x => x.ArticlesId,
+                        name: "FK_Ordes_Articles_ArticleId",
+                        column: x => x.ArticleId,
                         principalTable: "Articles",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -136,8 +160,7 @@ namespace E_Commerce.Migrations
                         name: "FK_Ordes_ShoppingCarts_ShoppingCartId",
                         column: x => x.ShoppingCartId,
                         principalTable: "ShoppingCarts",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateIndex(
@@ -146,14 +169,19 @@ namespace E_Commerce.Migrations
                 column: "BrandId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Categories_ArticleId",
-                table: "Categories",
-                column: "ArticleId");
+                name: "IX_Articles_CategoriesId",
+                table: "Articles",
+                column: "CategoriesId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Ordes_ArticlesId",
+                name: "IX_Articles_ImagenId",
+                table: "Articles",
+                column: "ImagenId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Ordes_ArticleId",
                 table: "Ordes",
-                column: "ArticlesId");
+                column: "ArticleId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Ordes_ShoppingCartId",
@@ -175,9 +203,6 @@ namespace E_Commerce.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Categories");
-
-            migrationBuilder.DropTable(
                 name: "Ordes");
 
             migrationBuilder.DropTable(
@@ -188,6 +213,12 @@ namespace E_Commerce.Migrations
 
             migrationBuilder.DropTable(
                 name: "Brands");
+
+            migrationBuilder.DropTable(
+                name: "Categories");
+
+            migrationBuilder.DropTable(
+                name: "Images");
 
             migrationBuilder.DropTable(
                 name: "Users");

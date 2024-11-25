@@ -15,14 +15,18 @@
         </label>
         <input type="checkbox" id="menu-switch">
         <ul class="menu__list">
-            <li class="menu__list__item">
-                <label class="menu__category">
+            <li class="menu__list__item borderNone">
+                <ul id="menuCategorie" onclick="toggleSubMenu(event)">
                     <i class="fa-solid fa-bars"></i>
-                    <p>Categoria</p>
+                    <li id="itemMenuCategorie">
+                        <p>Categorias</p>
+                        <ul id="subMenuCategorie" style="display:none">
+                        </ul>
+                    </li>
                     <i class="fa-solid fa-arrow-down"></i>
-                </label>
+                </ul>
             </li>
-            <li class="menu__list__item"><a href="/paginaPrincipal.html" id="pagina-principal">Pagina Principal</a></li>
+            <li class="menu__list__item borderLeft"><a href="/paginaPrincipal.html" id="pagina-principal">Pagina Principal</a></li>
             <li class="menu__list__item"><a href="/Views/Producto/index.html" id="catalogo">Catalogo</a></li>
             <li class="menu__list__item"><a href="#">Mis pedidos</a></li>
             <li class="menu__list__item"><a href="#">Quienes Somos</a></li>

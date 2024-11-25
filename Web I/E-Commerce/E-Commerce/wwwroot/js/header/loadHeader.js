@@ -1,3 +1,46 @@
+async function cargarMenuCategories() {
+    document.addEventListener('click', function (event) {
+        const isClickInsideMenu = event.target.closest('.menu-item');
+        if (!isClickInsideMenu) {
+            const submenus = document.querySelectorAll('.submenu');
+            submenus.forEach(submenu => {
+                submenu.style.display = 'none';
+            });
+        }
+    });
+
+    const response = await fetch('/api/category/GetCategories');
+    if (!response.ok) {
+        return;
+    }
+
+    const listOfCategories = await response.json();
+    mostrarMenuCategories(listOfCategories);
+}
+
+function mostrarMenuCategories(listOfCategories) {
+    console.log("Cargando Categorias...");
+    const subMenu = document.getElementById('subMenuCategorie');
+
+    subMenu.innerHTML = '';
+
+    listOfCategories.forEach(category => {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+
+        a.href = '#';
+        a.textContent = category.name;
+        li.appendChild(a);
+        subMenu.appendChild(li);
+    });
+}
+
+function toggleSubMenu(event) {
+    event.preventDefault();
+    const subMenu = document.getElementById('subMenuCategorie');
+    subMenu.style.display = subMenu.style.display === 'none' ? 'block' : 'none';
+}
+
 function loadHead() {
     fetch('/Partials/Header/head.html')
     .then(response => response.text())
@@ -40,4 +83,5 @@ function setActiveLink() {
 document.addEventListener('DOMContentLoaded', () => {
     loadHead();
     loadHeader();
+    cargarMenuCategories();
 });

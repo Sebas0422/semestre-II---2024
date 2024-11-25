@@ -25,9 +25,9 @@
     }
 
 .price {
+    margin: 0px;
     font-size: 28px;
     color: #e60000;
-    margin-top: 10px;
     font-weight: bold;
     text-align: center;
 }
@@ -38,7 +38,7 @@
 
 .info-section {
     margin-bottom: 20px;
-}
+}  
 
     .info-section h2 {
         font-size: 18px;
@@ -85,6 +85,6 @@
 
 @media screen and(min-width:992px) {
     .product-image img {
-        min-width: 800px;
+        min-width: 700px;
     }
 }
